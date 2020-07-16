@@ -5,6 +5,7 @@ import "../../App.css";
 
 function ThirdLoan({ totalAmount, setTotalAmount }) {
   const [totalAvailable, setTotalAvailable] = React.useState(0);
+  const [invested, setInvested] = React.useState(false);
 
   const handleInputChange = (e) => {
     e.preventDefault();
@@ -39,7 +40,7 @@ function ThirdLoan({ totalAmount, setTotalAmount }) {
             ? "Amount available is out"
             : convertAvailable(loan.available) - totalAvailable}{" "}
         </p>
-        <p key={loan.term_remaining}>Loan ends in: {loan.term_remaining}</p>
+        <p key={loan.term_remaining}>Loan ends in: 10 days</p>
         <p key={loan.amount}>
           Investment amount:{" "}
           {investmentAmount < 0 ? "Your money is out" : investmentAmount}

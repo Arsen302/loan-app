@@ -19,7 +19,6 @@ Modal.setAppElement("#root");
 
 function ThirdLoanItem({ title, totalAmount, setTotalAmount }) {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
-  const [invested, setInvested] = React.useState(false);
 
   return (
     <div className="card">
@@ -29,11 +28,10 @@ function ThirdLoanItem({ title, totalAmount, setTotalAmount }) {
           <p className="card-text">
             Some quick example text to build on the card
           </p>
+
           <button
             className="btn btn-outline-success"
-            onClick={() => {
-              setModalIsOpen(true);
-            }}
+            onClick={() => setModalIsOpen(true)}
           >
             invest
           </button>

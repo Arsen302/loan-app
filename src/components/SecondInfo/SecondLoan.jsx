@@ -39,7 +39,7 @@ function SecondLoan({ totalAmount, setTotalAmount }) {
             ? "Amount available is out"
             : convertAvailable(loan.available) - totalAvailable}{" "}
         </p>
-        <p key={loan.term_remaining}>Loan ends in: {loan.term_remaining}</p>
+        <p key={loan.term_remaining}>Loan ends in: 19 days</p>
         <p key={loan.amount}>
           Investment amount:{" "}
           {investmentAmount < 0 ? "Your money is out" : investmentAmount}
